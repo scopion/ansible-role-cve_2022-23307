@@ -1,8 +1,8 @@
 ---
 galaxy_info:
-  author: Robert de Bock
+  author: Michael Buluma
   role_name: cve_2022_23307
-  namespace: robertdebock
+  namespace: buluma
   description: Check and report for cve_2022_23307 (log4shell) on your system.
   license: Apache-2.0
   company: none

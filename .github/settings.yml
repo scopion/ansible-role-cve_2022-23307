@@ -4,5 +4,5 @@
 #
 repository:
   description: Check and report for cve_2022_23307 (log4shell) on your system.
-  homepage: https://robertdebock.nl/
-  topics: cve202144228, log4shell, log4j, ansible, molecule, tox, playbook, hacktoberfest
+  homepage: https://buluma.github.io/
+  topics: cve202223307, log4shell, log4j, ansible, molecule, tox, playbook, hacktoberfest

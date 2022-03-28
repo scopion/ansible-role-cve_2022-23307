@@ -1,10 +1,10 @@
-# [cve_2022_23307](#cve_2022_23307)
+# [cve_2022-23307](#cve_2022-23307)
 
 Check and report for cve_2022_23307 (log4shell) on your system.
 
-|GitHub|GitLab|Quality|Downloads|Version|
-|------|------|-------|---------|-------|
-|[![github](https://github.com/robertdebock/ansible-role-cve_2022_23307/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-cve_2022_23307/actions)|[![gitlab](https://gitlab.com/robertdebock/ansible-role-cve_2022_23307/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-cve_2022_23307)|[![quality](https://img.shields.io/ansible/quality/57278)](https://galaxy.ansible.com/robertdebock/cve_2022_23307)|[![downloads](https://img.shields.io/ansible/role/d/57278)](https://galaxy.ansible.com/robertdebock/cve_2022_23307)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-cve_2022_23307.svg)](https://github.com/robertdebock/ansible-role-cve_2022_23307/releases/)|
+|GitHub|GitLab|Quality|Downloads|Version|Issues|Pull Requests|
+|------|------|-------|---------|-------|------|-------------|
+|[![github](https://github.com/buluma/ansible-role-cve_2022-23307/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-cve_2022-23307/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-cve_2022-23307/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-cve_2022-23307)|[![quality](https://img.shields.io/ansible/quality/)](https://galaxy.ansible.com/buluma/cve_2022-23307)|[![downloads](https://img.shields.io/ansible/role/d/)](https://galaxy.ansible.com/buluma/cve_2022-23307)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-cve_2022-23307.svg)](https://github.com/buluma/ansible-role-cve_2022-23307/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-cve_2022-23307.svg)](https://github.com/buluma/ansible-role-cve_2022-23307/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-cve_2022-23307.svg)](https://github.com/buluma/ansible-role-cve_2022-23307/pulls/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -17,7 +17,7 @@ This example is taken from `molecule/default/converge.yml` and is tested on each
   gather_facts: yes
 
   roles:
-    - role: robertdebock.cve_2022_23307
+    - role: buluma.cve_2022_23307
 ```
 
 The machine needs to be prepared. In CI this is done using `molecule/default/prepare.yml`:
@@ -29,7 +29,7 @@ The machine needs to be prepared. In CI this is done using `molecule/default/pre
   gather_facts: no
 
   roles:
-    - role: robertdebock.bootstrap
+    - role: buluma.bootstrap
 
   # The role is prepared to install extra software and also remove when
   # the role is done. This is not idempotent, so in this playbook, the
@@ -43,7 +43,6 @@ The machine needs to be prepared. In CI this is done using `molecule/default/pre
         name: ["{{ cve_2022_23307_ps_package }}", unzip]
 ```
 
-Also see a [full explanation and example](https://robertdebock.nl/how-to-use-these-roles.html) on how to use these roles.
 
 ## [Role Variables](#role-variables)
 
@@ -89,7 +88,7 @@ cve_2022_23307_archive_patterns:
 
 ## [Requirements](#requirements)
 
-- pip packages listed in [requirements.txt](https://github.com/robertdebock/ansible-role-cve_2022_23307/blob/master/requirements.txt).
+- pip packages listed in [requirements.txt](https://github.com/buluma/ansible-role-cve_2022-23307/blob/main/requirements.txt).
 
 ## [Status of used roles](#status-of-requirements)
 
@@ -97,18 +96,19 @@ The following roles are used to prepare a system. You can prepare your system in
 
 | Requirement | GitHub | GitLab |
 |-------------|--------|--------|
-|[robertdebock.bootstrap](https://galaxy.ansible.com/robertdebock/bootstrap)|[![Build Status GitHub](https://github.com/robertdebock/ansible-role-bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-bootstrap/actions)|[![Build Status GitLab ](https://gitlab.com/robertdebock/ansible-role-bootstrap/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-bootstrap)|
+|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Build Status GitHub](https://github.com/buluma/ansible-role-bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/ansible-role-bootstrap/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-bootstrap)|
 
 ## [Context](#context)
 
-This role is a part of many compatible roles. Have a look at [the documentation of these roles](https://robertdebock.nl/) for further information.
+This role is a part of many compatible roles. Have a look at [the documentation of these roles](https://buluma.co.ke/) for further information.
 
 Here is an overview of related roles:
-![dependencies](https://raw.githubusercontent.com/robertdebock/ansible-role-cve_2022_23307/png/requirements.png "Dependencies")
+
+![dependencies](https://raw.githubusercontent.com/buluma/ansible-role-cve_2022-23307/png/requirements.png "Dependencies")
 
 ## [Compatibility](#compatibility)
 
-This role has been tested on these [container images](https://hub.docker.com/u/robertdebock):
+This role has been tested on these [container images](https://hub.docker.com/u/buluma):
 
 |container|tags|
 |---------|----|
@@ -128,7 +128,7 @@ The minimum version of Ansible required is 2.10, tests have been done to:
 
 
 
-If you find issues, please register them in [GitHub](https://github.com/robertdebock/ansible-role-cve_2022_23307/issues)
+If you find issues, please register them in [GitHub](https://github.com/buluma/ansible-role-cve_2022-23307/issues)
 
 ## [License](#license)
 
@@ -136,6 +136,4 @@ Apache-2.0
 
 ## [Author Information](#author-information)
 
-[Robert de Bock](https://robertdebock.nl/)
-
-Please consider [sponsoring me](https://github.com/sponsors/robertdebock).
+[Michael Buluma](https://buluma.github.io/)

@@ -5,7 +5,7 @@
   gather_facts: no
 
   roles:
-    - role: robertdebock.bootstrap
+    - role: buluma.bootstrap
 
   # The role is prepared to install extra software and also remove when
   # the role is done. This is not idempotent, so in this playbook, the
